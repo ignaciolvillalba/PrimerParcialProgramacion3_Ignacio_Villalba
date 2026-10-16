@@ -1,0 +1,123 @@
+:root {
+    --color-primario: #483D8B;
+    --gris-oscuro: #dddddd;
+    --gris-claro: #fbfbfb;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333333;
+}
+
+header {
+    padding: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+header p {
+    margin-bottom: 25px;
+}
+
+main {
+    padding: 10px;
+}
+
+h2 {
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: var(--gris-oscuro);
+}
+
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 12px 0 16px;
+}
+
+.acciones {
+    margin-bottom: 10px;
+}
+
+.filtros {
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.barra-busqueda {
+    width: 38%;
+}
+
+input[type="search"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 7px;
+    border: 1px solid var(--gris-oscuro);
+    background-color: var(--gris-claro);
+    font-size: 12px;
+    font-style: italic;
+}
+
+.botones button {
+    margin-right: 4px;
+}
+
+button {
+    padding: 6px 9px;
+    border: 1px solid var(--color-primario);
+    background-color: white;
+    color: var(--color-primario);
+    font-size: 11px;
+}
+
+.tabla-usuarios {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.tabla-usuarios th,
+.tabla-usuarios td {
+    border: 1px solid var(--gris-oscuro);
+    padding: 3px 5px;
+    text-align: left;
+}
+
+.tabla-usuarios tr:nth-child(even) {
+    background-color: var(--gris-claro);
+}
+
+.username {
+    color: var(--color-primario);
+}
+
+.tabla-usuarios input[type="checkbox"] {
+    accent-color: var(--color-primario);
+}
+
+footer {
+    padding: 15px;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    .toolbar {
+        display: block;
+    }
+
+    .barra-busqueda {
+        width: 100%;
+        margin-top: 10px;
+    }
+}

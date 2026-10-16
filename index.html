@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial 1 - Users</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Parcial 1</h1>
+        <p>Division 132</p>
+    </header>
+    <main>
+        <h2 id="users-heading">Users</h2>
+        <hr>
+        <div class="toolbar">
+            <div class="acciones">
+                <div class="filtros">
+                    <input type="radio" name="status" id="active" checked>
+                    <label for="active">Active</label>
+
+                    <input type="radio" name="status" id="inactive">
+                    <label for="inactive">Inactive</label>
+
+                    <input type="radio" name="status" id="all">
+                    <label for="all">All</label>
+                </div>
+                <div class="botones">
+                    <button type="button">CREATE</button>
+                    <button type="button">DEACTIVATE</button>
+                    <button type="button">RESET PASSWORD</button>
+                </div>
+            </div>
+            <div class="barra-busqueda">
+                <input type="search" id="search" placeholder="Search Users">
+            </div>
+        </div>
+        <div id="users-container"></div>
+    </main>
+    <footer>
+        <p>Ignacio Villalba</p>
+    </footer>
+</body>
+</html>
