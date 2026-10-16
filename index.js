@@ -6,13 +6,8 @@ console.table(usuariosGuardados);
 const tituloUsers = document.querySelector("#users-heading");
 const contenedor = document.querySelector("#users-container");
 
-tituloUsers.onclick = function() {
+tituloUsers.addEventListener("click", function() {
     const usuarios = JSON.parse(localStorage.getItem("usuarios"));
-
-    if (usuarios == null) {
-        alert("Primero guardá los usuarios en localStorage.");
-        return;
-    }
     let tabla = `
         <table class="tabla-usuarios">
             <tr>
@@ -38,4 +33,4 @@ tituloUsers.onclick = function() {
     }
     tabla += "</table>";
     contenedor.innerHTML = tabla;
-};
+});
